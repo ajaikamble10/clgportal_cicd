@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       oracle:
-        image: wnameless/oracle-xe-11g  # Oracle 11g container image
+        image: wnameless/oracle-xe-11g-r2  # Oracle 11g container image
         ports:
           - 1521:1521  # Expose Oracle port
         options: --health-cmd="nc -zv localhost 1521" --health-timeout=5s --health-start-period=10s --health-retries=5  # Health check
